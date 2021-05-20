@@ -7,13 +7,9 @@ Installation
 Dev release
 -----------
 
-Install the devpi-client (if not already installed)
-
 .. code-block:: console
 
-    $ pip install devpi-client
-    $ devpi use https://m.devpi.net/testspace/dev
-    $ devpi install testspace-colab
+    $ pip install --pre git+https://github.com/testspace-com/testspace-colab
 
 Stable release
 --------------

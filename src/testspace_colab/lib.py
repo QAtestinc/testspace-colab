@@ -165,7 +165,7 @@ class API:
         logger.debug(f"getting result content {path}")
         try:
             response = self.client.get_result_contents(
-                result_id, project=project, space=space, contents_path=path
+                result_id, project=project, space=space, contents_path=path, limit=None
             )
         except Exception as load_error:
             msg = f"failed to load {path}"
