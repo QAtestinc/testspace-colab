@@ -128,3 +128,6 @@ snippet.py
 .ipynb_checkpoints/
 .vscode/
 notebooks/dev/
+
+# Temp files
+sandbox.ipynb

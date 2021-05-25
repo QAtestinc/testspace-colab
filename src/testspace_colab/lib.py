@@ -22,7 +22,7 @@ logger = testspace_colab.ts_log.get_logger("api")
 class API:
     """Programming Interface for this package."""
 
-    def __init__(self, token=None, url=None, project=None, space=None):
+    def __init__(self, token=None, url=None, project=None, space=None, verify=None):
         # Try to attempt to load the configuration information
         self._token = None
         self._url = None
@@ -76,7 +76,7 @@ class API:
         )
 
         self.client = testspace.Testspace(
-            token=self._token, url=self._url, project=self._project, space=self._space
+            token=self._token, url=self._url, project=self._project, space=self._space, verify=verify
         )
 
     @property
